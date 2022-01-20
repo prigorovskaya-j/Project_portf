@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/calendar.css">
+<link rel="stylesheet" href="style/contact.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/history.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/validate.js"></script>
+<title>Контакт</title>
+</head>
+
+<body>
+<div class="onePage">
+  <nav id="menu">
+      <ul>
+          <li><a href="index.html"> Главная страница</a></li>
+          <li><a href="about.html"> Обо мне</a></li>
+          <div class="dropdown">
+              <li><a href="interest.html" class="dropbtn" onclick="myFunction()">Мои интересы</a></li>
+              <div class="dropdown-content" id="myDropdown">
+                  <a href="interest.html#Books" class="textHyper">Книги</a>
+                  <a href="interest.html#serial" class="textHyper">Сериалы</a>
+                  <a href="interest.html#blog" class="textHyper">Блог</a>
+                  <a href="interest.html#program" class="textHyper">Программирование</a>
+              </div>
+          </div>
+          <li><a href="studing.html">Учеба</a></li>
+          <li><a href="test.html">Тест</a></li>
+          <li><a href="photo.html">Фотоальбом</a></li>
+          <li><a href="#">Контакт</a></li>
+          <li><a href="history.html">История</a></li>
+      </ul>
+  </nav>
+</div>
+
+<script>
+</script>
+<div>
+  <p id="DDay">
+      <script>
+          currentDate()
+      </script>
+  </p>
+</div>
+
+<div class="contactYou">
+  <form name="formContact" onsubmit="return check_submit_cont()">
+      <p><b>FIO</b></p>
+      <input type="text" name="formFIO" size="50" maxlength="45" placeholder="ФИО через пробел" onblur="focusFio(this)" required>
+      <div>
+          <p id="pFio"></p>
+      </div>
+
+      <p><b>ПОЛ</b></p>
+      <input type="radio" name="gender" value="1" required>Мужской
+      <input type="radio" name="gender" value="2" required>Женский
+
+      <p><b>Возраст</b></p>
+      <select name="ages"  required>
+          <option desabled selected>Выберите вариант</option>
+          <option value="1">0-9</option>
+          <option value="2">10-15</option>
+          <option value="3">16-18</option>
+          <option value="4">19-25</option>
+          <option value="5">25+</option>
+      </select>
+
+      <p><b>Дата рождения</b></p>
+      <div>
+          <input type="text" name="birth"  required>
+          <div class="calendar">
+              <div class="exit">
+                  x
+              </div>
+              <div class="main_part">
+              </div>
+          </div>   
+          <script>showCalendar();</script>             
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p><b> Комментарий</b></p>
+      <input type="text" name="comment" size="50" maxlength="100" onblur="focusCom(this)"  required>
+      <div>
+          <p id="pCom"></p>
+      </div>  
+
+      <br>
+      <label for="Mail">Почта</label>
+      <input name="Mail" type="email" onblur="focusMail(this)"  required>
+      <div>
+          <p id="pMail"></p>
+      </div>
+
+      <p>Телефон в формате +7/+3 <input type="text" name="tel" onblur="focusTel(this)"  required></p>
+      <div>
+          <p id="pTel"></p>
+      </div>
+
+      <br> <input type="submit" name="Submit" value="Отправить"/>
+      <br> <input type="reset" value="Очистить" />
+      
+  </form>
+
+</div>
+
+</body>
+
+</html>

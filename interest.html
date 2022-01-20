@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/history.js"></script>
+    <title>Интересы</title>
+</head>
+
+<body class="backColor">
+    <div class="onePage">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html"> Главная страница</a></li>
+                <li><a href="about.html"> Обо мне</a></li>
+
+                <div class="dropdown">
+                    <li><a href="#" class="dropbtn" onclick="myFunction()">Мои интересы</a></li>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="interest.html#Books" class="textHyper">Книги</a>
+                        <a href="interest.html#serial" class="textHyper">Сериалы</a>
+                        <a href="interest.html#blog" class="textHyper">Блог</a>
+                        <a href="interest.html#program" class="textHyper">Программирование</a>
+                    </div>
+                </div>
+
+                <li><a href="studing.html">Учеба</a></li>
+                <li><a href="test.html">Тест</a></li>
+                <li><a href="photo.html">Фотоальбом</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+                <li><a href="history.html">История</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+    </script>
+    <div>
+        <p id="DDay">
+            <script>
+                currentDate()
+            </script>
+        </p>
+    </div>
+    <div id="mainInteresLynk">
+        <ul>
+            <li><a href="#Books" class="textHyper">Книги</a></li>
+            <li><a href="#serial" class="textHyper">Сериалы</a> </li>
+            <li><a href="#blog" class="textHyper">Блог</a></li>
+            <li><a href="#program" class="textHyper">Программирование</a> </li>
+        </ul>
+    </div>
+    <script>
+        outputInteres("interes", "Моё хобби", "Мои основные интересы - это книги, сериалы, блогерство, программирование", "images/1.jpg", "Фото интересов");
+        outputInteres("Books", "Книги: классика и нон-фикшен", "Самыми любимыми классиками являются Э.М. Хемингуэй и Р.Бредбери<br>Любимые книги: 451 градус по фаренгейту; Старик и море; Праздник, который всегда с тобой. <br> Из книг по саморазвитию стоит выделить Э.Б. Ларсен, Л. Бурбо, С. Гайз, М. Джей<br>Любимая книга: Важные годы. Второе место делят: Без жалости к себе; На пределе;Пять травм, которые мешают быть самим собой, MINI-привычки - MAXI-результаты", "images/kniga.jpg", "Книги");
+        outputInteres("serial", "Сериалы: ", "<ol><li>Анатомия страсти</li><li>Сверхъественное</li><li>База Куантико</li><li>Кукольный дом</li><li>Зачарованные</li><li>Зов крови</li><li>Реванш</li><li>Звездные врата</li><li>Государственный секретарь</li><li>Восприятие</li><li>Разведчицы</li><li>Доктор Хаус</li></ol>", "images/serial.png", "Сериалы");
+        outputInteres("blog", "Блогерство: ", "Основным блогом является страничка на платформе Instagram. <br>Никнейм: @teseyaa", "images/inst.jpg", "inst");
+        outputInteres("program", "Программирование: ", "Изучаемые языки: <ol><li>JavaScript(+HTML, CSS)</li><li>Java</li><li>C++</li><li>C#</li></ol>", "images/projets.jpg", "program");
+    </script>
+
+    <!--
+<p id="book">
+  <h1>Книги</h1>
+  <b>Классика:</b> 
+  <br>Э.М. Хэмингуэй "Старик и море", "Праздник, который всегда с тобой"
+  <br>Р. Брэдбери "451 градус по Фаренгейту", "Как писать книги"
+  <br><b>Саморазвитие</b>
+  <br>Э.Б. Ларсен "На предели", "Без жалости к себе"
+  <br>Л. Бурбо "Пять травм, которые мешают быть самим собой"
+  <br>С. Гайз "MINI-привычки - MAXI-результаты" 
+  <br>М. Джей "Важные годы"
+</p>
+<p id="serial">
+  <h1>Сериалы</h1>
+  <br>Анатомия страсти
+  <br>Сверхъественное 
+  <br>База Куантико
+  <br>Кукольный дом
+  <br>Зачарованные
+  <br>Зов крови
+  <br>Реванш
+  <br>Звездные врата
+  <br>Государственный секретарь
+  <br>Восприятие
+  <br>Разведчицы
+  <br>Доктор Хаус
+</p>
+<p id="blog">
+  <h1>Блогерство</h1>
+  <br>instagram
+  <br>TikTok
+</p>
+<p id="program">
+  <h1>Программирование</h1>
+  <br>java
+  <br>js, html, css
+  <br>c++
+</p>
+-->
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script async src="js/index.js"></script>
+    <script async src="js/history.js"></script>
+</head>
+
+<body class="backIndex">
+
+    <nav id="menu">
+        <ul>
+            <li><a href="#"> Главная страница</a></li>
+            <li><a href="about.html"> Обо мне</a></li>
+            <div class="dropdown">
+                <li><a href="interest.html" class="dropbtn" onclick="myFunction()">Мои интересы</a></li>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="interest.html#Books" class="textHyper">Книги</a>
+                    <a href="interest.html#serial" class="textHyper">Сериалы</a>
+                    <a href="interest.html#blog" class="textHyper">Блог</a>
+                    <a href="interest.html#program" class="textHyper">Программирование</a>
+                </div>
+            </div>
+            <li><a href="studing.html">Учеба</a></li>
+            <li><a href="test.html">Тест</a></li>
+            <li><a href="photo.html">Фотоальбом</a></li>
+            <li><a href="contact.html">Контакт</a></li>
+            <li><a href="history.html">История</a></li>
+        </ul>
+    </nav>
+    <h1>Пригоровская Юлия Ивановна</h1>
+    <div>
+        <p id="DDay">
+            <script>
+                currentDate()
+            </script>
+        </p>
+    </div>
+    <div class="indexBack">
+        <p>
+            <br>Группа ПИ/б-18-1-о
+            <br>Лабораторная работа №1
+            <br>Исследование возможностей языка разметки гипертекстов HTML и каскадных таблиц стилей CSS
+        </p>
+    </div>
+
+    <div class="indexBack">
+        <img src="images/1.jpg" alt="Мое фото" width="75%">
+    </div>
+
+    <a href="https://www.instagram.com/teseyaa/" class="textInst"> @teseyaa</a>
+</body>
+
+</html>

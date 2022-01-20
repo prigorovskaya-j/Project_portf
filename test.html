@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/validate.js"></script>
+    <title>Тест</title>
+
+</head>
+
+<body class="backColor">
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html"> Главная страница</a></li>
+            <li><a href="about.html"> Обо мне</a></li>
+            <div class="dropdown">
+                <li><a href="interest.html" class="dropbtn" onclick="myFunction()">Мои интересы</a></li>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="interest.html#Books" class="textHyper">Книги</a>
+                    <a href="interest.html#serial" class="textHyper">Сериалы</a>
+                    <a href="interest.html#blog" class="textHyper">Блог</a>
+                    <a href="interest.html#program" class="textHyper">Программирование</a>
+                </div>
+            </div>
+            <li><a href="studing.html">Учеба</a></li>
+            <li><a href="#">Тест</a></li>
+            <li><a href="photo.html">Фотоальбом</a></li>
+            <li><a href="contact.html">Контакт</a></li>
+            <li><a href="history.html">История</a></li>
+        </ul>
+    </nav>
+    <script>
+    </script>
+    <div>
+        <p id="DDay">
+            <script>
+                currentDate()
+            </script>
+        </p>
+    </div>
+    <h4>Министерство науки и высшего образования Российской Федерации
+        <br>Федеральное государственное автономное образовательное учреждение высшего образования
+        <br>«Севастопольский государственный университет»</h4>
+    <h4>Кафедра "Информационные системы"</h4>
+
+    <p><b>Тест по дисцплине: Основы программирования и алгориметрического языка</b></p>
+    <form name="formStudy" onsubmit="return check_submit()">
+        <p><b>ФИО:</b> </p>
+        <input type="text" name="formFIO" size=50px maxlength=45 required>
+        <p><b>Группа:</b></p>
+        <select name="group" required>
+            <option disabled selected>Выберите группу</option>
+            <optgroup label="1 курс">
+            <option>ПИ/б-20-1-о</option>
+            <option>ИС/б-20-1-о</option>
+            <option>ИС/б-20-2-о</option>
+            <option>ИС/б-20-3-о</option>
+            <optgroup label="2 курс">
+            <option>ПИ/б-19-1-о</option>
+            <option>ИС/б-19-1-о</option>
+            <option>ИС/б-19-2-о</option>
+            <option>ИС/б-19-3-о</option>
+            <optgroup label="3 курс">
+            <option>ПИ/б-18-1-о</option>
+            <option>ИС/б-18-1-о</option>
+            <option>ИС/б-18-2-о</option>
+            <option>ИС/б-18-3-о</option>
+            <optgroup label="4 курс">
+            <option>ПИ/б-17-1-о</option>
+            <option>ИС/б-17-1-о</option>
+            <option>ИС/б-17-2-о</option>
+            <option>ИС/б-17-3-о</option>
+        </select>
+
+        <p><b>Вопрос 1: Алгоритм - это...</b></p>
+        <select name="question1" required>
+  <option disabled selected>Выберите вариант</option>
+  <option>1. указание на выполнение действий</option>
+  <option>2. система правил, описывающая последовательность действий,
+    <br> которые необходимо выполнить для решения задачи
+  </option>
+  <option>3. процесс выполнения вычислений, приводящих к решению задачи</option>
+  <option>4. антоним инструкции</option>
+</select>
+
+        <p><b>Вопрос 2: Сколько байт хранит в себе int</b> </p>
+        <input type="textrea" name="question2" size=50px maxlength=45 required>
+
+        <p><b>Вопрос 3: Переменная — это...</b></p>
+        <input type="radio" name="question3" value="1" required> 1. служебное слово на языке QBASIC
+        <br>
+        <input type="radio" name="question3" value="2" required> 2. область памяти, в которой хранится некоторое значение
+        <br>
+        <input type="radio" name="question3" value="3" required> 3. значение регистра
+
+        <br> <input type="submit" name="Submit" value="Отправить" />
+        <p> <input type="reset" value="Очистить" /></p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+body {
+  background-color: #c5a78a;
+}
+
+.backAbout {
+  background-image: url(../images/backFlower.jpg);
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 3%;
+  margin-left: 25%;
+  padding-left: 0;
+}
+nav li {
+  display: inline;
+}
+nav li:after {
+  content: "|";
+  color: black;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  display: block;
+}
+
+#menu li:hover {
+  background-color: #f90;
+}
+#menu a {
+  size: 24pt;
+  font-style: italic;
+  font-family: "Times New Roman";
+  text-decoration: none;
+  color: black;
+}
+#menu a:hover {
+  text-decoration: none;
+  color: #92816f;
+}
+
+p {
+  font-family: sans-serif;
+  font-style: italic;
+  color: black;
+}
+
+#mainInteresLynk {
+  width: 595px;
+  height: 95px;
+  margin: 5.5px 10px 10px 0px;
+  font-size: 22px;
+}
+
+h4 {
+  text-align: center;
+}
+
+a.textHyper {
+  font-style: italic;
+  font-family: "Times New Roman";
+  text-decoration: none;
+  color: black;
+}
+a.textHyper:active {
+  text-decoration: none;
+  background-color: #a39587;
+}
+a.textHyper:hover {
+  text-decoration: none;
+  background-color: #a39587;
+}
+
+.photos img {
+  width: 15%;
+  margin: 10px;
+}
+
+.indexBack {
+  display: inline-block;
+}
+.indexBack p {
+  padding-right: 10px;
+  font-family: "Times New Roman";
+  font-style: italic;
+  margin-left: 35%;
+  margin-top: 10%;
+  size: 24pt;
+}
+.indexBack img {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.backIndex h1 {
+  padding-bottom: 10px;
+  font-family: "Times New Roman";
+  font-style: italic;
+  margin-left: 28%;
+  margin-top: 3%;
+  size: 36pt;
+}
+
+.textInst {
+  font-family: "Times New Roman";
+  font-style: italic;
+  margin-left: 35%;
+  margin-top: 10%;
+  size: 36pt;
+  text-decoration: none;
+  color: black;
+}
+
+.textAbout {
+  font-family: "Times New Roman";
+  font-style: italic;
+  margin-left: 140px;
+  margin-top: 76px;
+  size: 30pt;
+}
+
+.imgAbout img {
+  margin-top: 76px;
+  margin-left: 140px;
+}
+
+.comment {
+  height: 100px;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
